@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGraphic1">
+   <children>
+      <TabPane layoutX="-1.0" prefHeight="550.0" prefWidth="630.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="      Search      ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="630.0">
+                     <children>
+                        <ListView fx:id="moveList1" layoutX="109.0" layoutY="165.0" onMouseClicked="#lookByHistory" prefHeight="340.0" prefWidth="351.0" />
+                        <Button layoutX="478.0" layoutY="125.0" mnemonicParsing="false" onAction="#lookWord2" prefHeight="33.0" prefWidth="83.0" text="Search">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="search" layoutX="108.0" layoutY="125.0" onKeyPressed="#lookWord1" onKeyTyped="#searchWord" prefHeight="33.0" prefWidth="351.0" promptText="Enter the search word" />
+                        <Label layoutX="122.0" layoutY="31.0" text="D" textFill="#2200ff">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="166.0" layoutY="22.0" text="I" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="186.0" layoutY="22.0" text="C" textFill="YELLOW">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="230.0" layoutY="31.0" text="T" textFill="BLUE">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="275.0" layoutY="22.0" text="I" textFill="GREEN">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="295.0" layoutY="22.0" text="O" textFill="RED">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="341.0" layoutY="31.0" text="N" textFill="#ff00ae">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="389.0" layoutY="22.0" text="A" textFill="#ff8800">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="432.0" layoutY="31.0" text="R">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="472.0" layoutY="31.0" text="Y" textFill="#27bad3">
+                           <font>
+                              <Font name="System Bold" size="60.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="      Edit      ">
+               <content>
+                  <AnchorPane prefHeight="550.0" prefWidth="630.0">
+                     <children>
+                        <ListView fx:id="moveList2" onMouseClicked="#showWordToRepair" prefHeight="522.0" prefWidth="317.0" />
+                        <Button layoutX="415.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#addWordToList" prefHeight="25.0" prefWidth="103.0" text="+ Add Word" />
+                        <Button layoutX="415.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#deleteWordInList" prefHeight="25.0" prefWidth="103.0" text="- Delete Word" />
+                        <Button layoutX="415.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#repairWordInList" prefHeight="25.0" prefWidth="103.0" text="Repair Word" />
+                        <TextField fx:id="target" layoutX="400.0" layoutY="69.0" prefHeight="33.0" prefWidth="190.0" />
+                        <TextArea fx:id="explain" layoutX="400.0" layoutY="122.0" prefHeight="112.0" prefWidth="191.0" />
+                        <Label layoutX="329.0" layoutY="72.0" text="Target">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="327.0" layoutY="122.0" text="Explain">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="    Translate    ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="477.0" prefWidth="607.0" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

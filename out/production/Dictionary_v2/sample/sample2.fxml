@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGraphic2">
+   <children>
+      <Button layoutX="456.0" layoutY="471.0" mnemonicParsing="false" onMouseClicked="#changeScreen2" text="       Cancle       ">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font></Button>
+      <Label fx:id="target" alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="24.0" prefWidth="234.0" text="Label">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="explain" alignment="TOP_LEFT" layoutX="14.0" layoutY="47.0" prefHeight="498.0" prefWidth="437.0" text="Label">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="456.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#buttonVoice" prefHeight="39.0" prefWidth="85.0" text="Speak">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
